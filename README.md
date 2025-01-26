@@ -1,9 +1,11 @@
 # py-algo-example
-Example Python algorithm that is integrated into TradeBot. This C++ algorithm is just a simple algortithm that uses EMA crossovers to send a buy and sell signals. The EMA periods are set as runtime parameters. It will calculate the EMAs and whenever there is a crossover, it will advise to BUY or SELL accordingly. NOTE: This is a simple algo just used as an example and should be not be used in practice. 
+Example Python algorithm that is integrated into TradeBot. This Python algorithm is just a simple algortithm that uses EMA crossovers to send a buy and sell signals. The EMA periods are set as runtime parameters. It will calculate the EMAs and whenever there is a crossover, it will advise to BUY or SELL accordingly. NOTE: This is a simple algo just used as an example and should be not be used in practice. 
 
 TradeBot uses pyo3 to execute the python code. Integration and execution of this Python algoirthm can be found here:
 
 https://github.com/sayedrasheed/tradebot-rs/blob/master/algo-service/src/py_algo/py_algo.rs
+
+Currently, TradeBot includes this python example as a submodule to get the python source code and handles all the python execution at runtime. I believe a better way of doing this is changing this repo be a crate that wraps the pyo3 usage and TradeBot will add just the crate. However, doing it this way we will need to create a python package of the algorithm code that TradeBot will need to pip install since it needs it at runtime.
 
 # Installation
 1. Download and install [Python]([https://cmake.org/download/](https://www.python.org/downloads/))
