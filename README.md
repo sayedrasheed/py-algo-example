@@ -30,4 +30,5 @@ These functions will then be called by TradeBot any time the node receives the c
 
 https://github.com/sayedrasheed/tradebot-rs/blob/master/algo-service/src/py_algo/py_algo.rs#L322
 
-See video below for an example of this algorithm running in TradeBot:
+See video for an example of this algorithm running in TradeBot:
+[Youtube](https://www.youtube.com/shorts/MzAcaJlIPCU)
